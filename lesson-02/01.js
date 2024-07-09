@@ -1,5 +1,5 @@
 const doArrow = (value) => {
-  console.log(value)
-}
+  console.log(value);
+};
 
-doArrow(5)
+doArrow(5);
