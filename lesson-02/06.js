@@ -10,8 +10,12 @@ let passportWithAddress = {
 };
 
 // let copyPassportWithAddress = structuredClone(passportWithAddress);
-let copyPassportWithAddress = {...passportWithAddress}
-copyPassportWithAddress.address = {...passportWithAddress.address}
+let copyPassportWithAddress = {
+  ...passportWithAddress,
+  address: {
+    ...passportWithAddress.address,
+  },
+};
 
 copyPassportWithAddress.address.city = 'Bobryisk';
 
